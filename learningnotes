@@ -1,4 +1,4 @@
-git使用
+#git使用
 1.安装git：sudo apt-get install git
 2.创建github账号，包括用户名，邮箱
 3. 创建ssh：ssh-keygen -t rsa -C "18829354152@163.com"
@@ -16,6 +16,19 @@ git add xxx
 git commit -m "提交信息"
 git push -u origin master
 9.从github克隆项目到本地
+10.github创建新分支
+在本地创建新的分支 git branch newbranch
+切换到新的分支 git checkout newbranch
+将新的分支推送到github git push origin newbranch
+在本地删除一个分支： git branch -d newbranch
+在github远程端删除一个分支： git push origin :newbranch (分支名前的冒号代表删除)
 复制仓库的Https，使用命令git clone https://github.com/PentonBin/Demo.git（例子）
-
+======================
+#c++指针内存申请与释放
+int* c=new int[n];
+delete []c;
+==================
+32位ubuntu卸载wps
+sudo apt-get purge wps-office:i386
+ 
 
